@@ -1,0 +1,386 @@
+@import url(./assets/font/poppins/Poppins-Regular.ttf);
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:1,300,400,400italic,500,700,700italic,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg-color: #f2b5d4;
+  --second-bg-color: #ffc5828c;
+  --text-color: #0a1128;
+  --main-color: #00eeff93;
+  --w-color: #ffffff;
+
+  /* ================================== */
+  --main-color1: #d7c7ae;
+  --primary-color: #8a6d46;
+  --black: #2a201c;
+  --white: #fff;
+  /* ============background_styles============= */
+  --light-bg: #f3efec;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.home-img img {
+  /* width: 45vw; */
+  width: 40vw;
+  animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url(./assets/images/about.jpg) center/cover; */
+  min-height: 100vh;
+}
+
+.home-content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--w-color);
+}
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+.home-content h1 {
+  font-size: 6.7rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--main-color);
+  text-decoration: none;
+
+  font-style: italic;
+}
+span {
+  color: var(--main-color);
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  color: var(--w-color);
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.btn-reserv {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--text-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  box-shadow: none;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+/* =========================section choix de style===================  */
+.styles {
+  background: var(--light-bg);
+}
+.styles .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.styles .box-container .box .image {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+
+  transition: 0.5s ease;
+}
+.styles .box-container .box .image:hover {
+  transform: scale(1.02);
+}
+.styles .box-container .box .image img {
+  object-fit: cover;
+}
+.styles .box-container .box .content {
+  text-align: center;
+}
+
+.styles .box-container .box .content .title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.styles .box-container .box .content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #444;
+  padding: 1rem 0;
+}
+
+/* ==========================fin du section choix de style================= */
+
+/* =====================Forfait================================= */
+
+.pricing {
+  background-attachment: fixed;
+  background: var(--light-bg);
+}
+.pricing h1 {
+  margin-top: 0;
+}
+
+.pricing .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing .box-container .box {
+  height: 450px;
+  width: 220px;
+  margin: 20px 40px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background: var(--primary-color);
+  transition: 0.5s ease;
+}
+
+.pricing .box-container .box:hover {
+  transform: scale(1.02);
+}
+
+.pricing .box-container .box::before,
+.pricing .box-container .box::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.pricing .box-container .box::before {
+  background: var(--light-bg);
+  top: -10px;
+  left: 80%;
+}
+
+.pricing .box-container .box::after {
+  background: var(--main-color1);
+  bottom: -10px;
+  right: 80%;
+}
+
+.pricing .box-container .box .title {
+  margin: 30px 0;
+  font-size: 26px;
+  color: var(--main-color1);
+  text-transform: capitalize;
+}
+.pricing .box-container .box .price {
+  height: 100px;
+  width: 100px;
+  background-color: var(--black);
+  padding: 37px 0 0;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+}
+.pricing .box-container .box .price .currency {
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 300;
+}
+.pricing .box-container .box .price .amount {
+  font-size: 38px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.pricing .box-container .box ul li {
+  text-align: left;
+  font-size: 16px;
+  padding-left: 45px;
+  margin: 20px auto;
+  color: var(--white);
+  list-style: none;
+  text-transform: uppercase;
+}
+.pricing .box-container .box ul li i {
+  color: var(--main-color1);
+  padding: 0 10px;
+}
+.pricing .box-container .box button {
+  height: 40px;
+  width: 140px;
+  outline: none;
+  border-radius: 50px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: none;
+  color: var(--main-color1);
+  border: 2px solid var(--main-color1);
+  font-size: 17px;
+  font-weight: bold;
+}
+.pricing .box-container .box button:hover {
+  color: var(--white);
+  background: var(--main-color1);
+}
+
+/* ===============Footer========== */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 20%;
+  background: var(--second-bg-color);
+}
+.footer-text p {
+  font-size: 2rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--main-color);
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--white);
+}
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--text-color);
+}
+
+/* ==========================fn Forfait===================== */
+
+/* ===============media query================================== */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .styles .box-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 25%);
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .styles .box-container {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+@media (max-width: 365px) {
+  .home-img img {
+    width: 90vw;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

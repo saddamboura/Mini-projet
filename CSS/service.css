@@ -1,0 +1,225 @@
+@import url(./assets/font/poppins/Poppins-Regular.ttf);
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:1,300,400,400italic,500,700,700italic,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #f2b5d4;
+
+  --second-bg-color: #ffc5828c;
+  --text-color: #0a1128;
+  --main-color: #00eeff93;
+  --w-color: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background: var(--bg-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+/* ====================section_service1================================= */
+
+.service1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service1 h1 {
+  margin-top: 0;
+  color: var(--w-color);
+  text-align: center;
+  font-size: 20rem;
+  font-family: "Billin dreams";
+  font-style: italic;
+}
+
+/* ====================fin_section_service1================================= */
+
+/* ====================service================================= */
+
+.services {
+  background: rgba(0, 0, 0, 0.2);
+}
+.services h2 {
+  text-align: center;
+  font-size: 6.5rem;
+  margin-bottom: 6rem;
+  color: var(--w-color);
+  font-family: "Billin dreams";
+  text-transform: uppercase;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.services-container .services-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.services-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.services-box:hover img {
+  transform: scale(1.1);
+}
+
+.services-box .services-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.services-box:hover .services-layer {
+  transform: translateY(0);
+}
+.services-layer h4 {
+  font-size: 3rem;
+}
+.services-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.services-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+.services-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
+
+/* ==================footer================== */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 20%;
+  background: var(--second-bg-color);
+}
+.footer-text p {
+  font-size: 2rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--main-color);
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--w-color);
+}
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--text-color);
+}
+
+/* ==========================Responsive======================= */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  .service1 h1 {
+    font-size: 10rem;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .services {
+    padding-bottom: 7rem;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+
+    /* le fait d'attacher les liens avec les 3bars  */
+
+    .services h2 {
+      margin-bottom: 3rem;
+    }
+    .services-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 617px) {
+    .services-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }
+  @media (max-width: 365px) {
+    .footer {
+      flex-direction: column-reverse;
+    }
+    .footer p {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}

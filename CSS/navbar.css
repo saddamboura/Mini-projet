@@ -1,0 +1,99 @@
+:root {
+  --w-color: #ffffff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+header .logo:hover {
+  transform: scale(1.1);
+}
+
+/* .header.sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+} */
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--w-color);
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  /* =====================le fait de le placer à droite================================ */
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    /* le fait de disparaître les liens du menu  */
+    display: none;
+  }
+
+  /* =========================le fait d'attacher les liens avec les 3bars================== */
+  .navbar.active {
+    display: block;
+  }
+  /* ==========================le fait de les alignées en colonne============================= */
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  /* ================pour déplacer la photo du menu en bas en dimunuant l'ecran========================== */
+  .home {
+    flex-direction: column;
+  }
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+  .home-content h1 {
+    font-size: 5rem;
+  }
+  .home-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .styles .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+/* ===========responsive====================== */
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+}

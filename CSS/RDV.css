@@ -1,0 +1,360 @@
+@import url(./assets/font/poppins/Poppins-Regular.ttf);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --indian-yellow: hsl(36, 61%, 58%);
+  --eerie-black-1: hsl(0, 0%, 14%);
+  --black_30: hsla(0, 0%, 0%, 0.3);
+  --white: hsl(0, 0%, 100%);
+  --bg-color: #f2b5d4;
+  --main-color: #00eeff93;
+  --w-color: #ffffff;
+  /* ====================================================== */
+
+  --ff-oswald: "Oswald", sans-serif;
+  --ff-rubik: "Rubik", sans-serif;
+
+  --fs-40: 4rem;
+  --fs-30: 3rem;
+  --fs-14: 1.4rem;
+  --fw-500: 500;
+
+  --radius-5: 5px;
+  --radius-8: 8px;
+
+  /* ==============transition================== */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+/* ===============RESET============================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*/ a,
+img,
+input,
+select,
+button,
+textarea,
+ion-icon {
+  display: block;
+}
+
+input,
+select,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+html {
+  font-family: var(--ff-rubik);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* =====================style à utiliser======================= */
+
+.container {
+  padding-inline: 15px;
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+/* ===============section================== */
+
+.rdv1 h1 {
+  margin-top: 0;
+  color: var(--w-color);
+  text-align: center;
+  font-size: 20rem;
+  font-family: "Billin dreams";
+  font-style: italic;
+}
+
+.rdv1 p {
+  text-align: center;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+
+/* =====================APPOINTMENT============================ */
+
+.appoin {
+  padding-block-start: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.appoin-card .card-banner {
+  display: none;
+}
+
+.appoin-card .card-content {
+  background-color: var(--indian-yellow);
+  padding: 80px 15px;
+  text-align: center;
+  color: var(--white);
+}
+
+.appoin-card .section-title {
+  color: var(--white);
+}
+
+.appoin-card .section-text {
+  margin-block: 15px 55px;
+}
+
+.input-field {
+  background-color: var(--white);
+  color: var(--davys-gray);
+  min-height: 56px;
+  padding-inline: 25px;
+  border-radius: var(--radius-5);
+  margin-block-end: 20px;
+  outline: none;
+  outline-offset: 0;
+}
+
+.input-field:focus {
+  outline: 3px solid var(--black_30);
+}
+
+select.input-field {
+  appearance: none;
+}
+
+select.input-field,
+.input-field::placeholder,
+.input-field.date {
+  font-family: var(--ff-oswald);
+  color: var(--eerie-black-1);
+  font-weight: var(--fw-500);
+}
+
+.input-field > option {
+  color: var(--sonic-silver);
+  font-family: var(--ff-rubik);
+}
+
+.input-field.date {
+  text-transform: uppercase;
+}
+
+.input-field::-webkit-calendar-picker-indicator {
+  opacity: 0.85;
+}
+
+textarea.input-field {
+  padding-block: 15px;
+  min-height: 100px;
+  height: 120px;
+  max-height: 150px;
+  resize: vertical;
+}
+
+.form-btn {
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--white);
+  padding: 13px;
+  border-radius: var(--radius-5);
+  transition: var(--transition-1);
+}
+
+.form-btn:is(:hover, :focus) {
+  background-color: var(--white);
+  color: var(--eerie-black-1);
+}
+
+/* ===============Footer========== */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 20%;
+  background: var(--second-bg-color);
+}
+.footer-text p {
+  font-size: 2rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--main-color);
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--w-color);
+}
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--text-color);
+}
+
+@media (min-width: 575px) {
+  :root {
+    --fs-40: 6rem;
+  }
+
+  /* ====================REUSED STYLE=================== */
+  .container,
+  .header-top {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .h2 {
+    --fs-30: 3.5rem;
+  }
+  /* ==================APPOINTMENT================= */
+
+  .appoin-card .card-content {
+    padding-inline: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .rdv1 h1 {
+    font-size: 10rem;
+    /* font-family: var(--w-color); */
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* ==================responsive for large than 768px screen=============== */
+
+@media (min-width: 768px) {
+  :root {
+    --fs-40: 8rem;
+  }
+
+  /* ===============REUSED STYLE================ */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .h2 {
+    --fs-30: 4rem;
+  }
+
+  .section-text {
+    max-width: 50ch;
+    margin-inline: auto;
+  }
+
+  /* =================APPOINTMENT===================== */
+
+  .appoin-card .card-banner {
+    display: block;
+  }
+
+  .appoin-card {
+    display: flex;
+  }
+}
+/* ==================responsive for large than 992px screen================= */
+
+@media (min-width: 992px) {
+  :root {
+    --fs-40: 10rem;
+  }
+
+  /* ================REUSED STYLE================================= */
+
+  .container {
+    max-width: 960px;
+  }
+
+  /* ================APPOINTMENT============================ */
+
+  .appoin-card .input-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* =================responsive for large than 1200px screen================ */
+
+@media (min-width: 1200px) {
+  :root {
+    --fs-40: 11rem;
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 120px;
+  }
+
+  /* ============== REUSED STYLE========================== */
+
+  .container {
+    max-width: 1200px;
+  }
+
+  /* ================APPOINTMENT======================= */
+
+  .appoin-card .card-content {
+    flex-grow: 1;
+  }
+}

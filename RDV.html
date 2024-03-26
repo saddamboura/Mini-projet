@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./node_modules/boxicons/css/boxicons.css" rel="stylesheet" />
+
+    <!-- ============ primary meta tags===================== -->
+    <title>Rendez-vous</title>
+
+    <link rel="stylesheet" href="./CSS/RDV.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css" />
+
+    <!-- ======================google font link============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- =================== Header Design============================ -->
+
+    <header class="header">
+      <a href="#"><img src="./logo.svg" class="logo" alt="logo" /></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="./index.html" id="home">Home</a>
+        <a href="./about.html" id="about">About</a>
+        <a href="./service.html" id="services">Services</a>
+        <a href="./RDV.html" id="reserve" class="active">Prends un RDV</a>
+        <a href="./contact.html" id="contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ==========================section_rvd1=============================== -->
+
+    <section class="rdv1" id="reserve">
+      <div>
+        <h1>Rendez-Vous</h1>
+        <p>
+          Salon de beauté vous répond à tous vos questions, N'hésitez pas à
+          faire faire votre rendez-vous. Une question sur votre soin.
+          <br />Contactez-nous en remplissant le formulaire ci-dessous.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================APPOINTMENT=============================== -->
+
+    <section class="section appoin" id="appointment" aria-label="appointment">
+      <div class="container">
+        <div class="appoin-card">
+          <figure
+            class="card-banner img-holder"
+            style="--width: 250; --height: 774"
+          >
+            <img
+              src="./assets/images/appoin-banner-1.jpg"
+              width="250"
+              height="774"
+              loading="lazy"
+              alt=""
+              class="img-cover"
+            />
+          </figure>
+
+          <div class="card-content">
+            <h2 class="h2 section-title">Prendre un Rendez-Vous</h2>
+
+            <p class="section-text">
+              Il est très important de remplir tous ces champs, pour bien éviter
+              un message d'erreur au moment de la validation.
+            </p>
+
+            <form action="" class="appoin-form">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Full Name"
+                  required
+                  class="input-field"
+                />
+
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Email Address"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
+                  class="input-field"
+                />
+
+                <select name="category" class="input-field">
+                  <option value="Select category">Select category</option>
+                  <option value="Beauty & spa">Beauty & spa</option>
+                  <option value="Body massage">Body massage</option>
+                  <option value="Shaving & Facial">Shaving & Facial</option>
+                  <option value="Hair Color">Hair Color</option>
+                </select>
+              </div>
+
+              <input
+                type="date"
+                name="date"
+                required
+                class="input-field date"
+              />
+
+              <input
+                type="time"
+                name="date"
+                required
+                class="input-field date"
+              />
+
+              <textarea
+                name="message"
+                placeholder="Write Message"
+                required
+                class="input-field"
+              ></textarea>
+
+              <button type="submit" class="form-btn">
+                <span class="span">Appointment Now</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+
+          <figure
+            class="card-banner img-holder"
+            style="--width: 250; --height: 774"
+          >
+            <img
+              src="./assets/images/appoin-banner-2.jpg"
+              width="250"
+              height="774"
+              loading="lazy"
+              alt=""
+              class="img-cover"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================Footer Design========================= -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by codehal | All Rights Reserved</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#top"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- ==================section JS ==================== -->
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
