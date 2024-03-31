@@ -146,8 +146,14 @@ span {
 
 /* =========================section choix de style===================  */
 .styles {
-  background: var(--light-bg);
+  /* background: var(--light-bg); */
+  background: rgba(0, 0, 0, 0.2);
 }
+
+.styles h1 {
+  color: var(--white);
+}
+
 .styles .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -174,14 +180,14 @@ span {
 
 .styles .box-container .box .content .title {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: var(--white);
   text-transform: capitalize;
 }
 
 .styles .box-container .box .content p {
   font-size: 1.6rem;
   line-height: 1.8;
-  color: #444;
+  color: black;
   padding: 1rem 0;
 }
 
@@ -191,10 +197,12 @@ span {
 
 .pricing {
   background-attachment: fixed;
-  background: var(--light-bg);
+  /* background: var(--light-bg); */
+  background: rgba(0, 0, 0, 0.2);
 }
 .pricing h1 {
   margin-top: 0;
+  color: var(--white);
 }
 
 .pricing .box-container {
@@ -214,7 +222,8 @@ span {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+  background: var(--white);
   transition: 0.5s ease;
 }
 
@@ -233,13 +242,13 @@ span {
 }
 
 .pricing .box-container .box::before {
-  background: var(--light-bg);
+  background: var(--main-color);
   top: -10px;
   left: 80%;
 }
 
 .pricing .box-container .box::after {
-  background: var(--main-color1);
+  background: var(--main-color);
   bottom: -10px;
   right: 80%;
 }
@@ -247,13 +256,13 @@ span {
 .pricing .box-container .box .title {
   margin: 30px 0;
   font-size: 26px;
-  color: var(--main-color1);
+  color: var(--black);
   text-transform: capitalize;
 }
 .pricing .box-container .box .price {
   height: 100px;
   width: 100px;
-  background-color: var(--black);
+  background-color: var(--main-color);
   padding: 37px 0 0;
   margin: 0 auto 25px;
   border-radius: 50%;
@@ -262,18 +271,21 @@ span {
   font-size: 35px;
   line-height: 35px;
   font-weight: 300;
+  color: var(--white);
 }
 .pricing .box-container .box .price .amount {
   font-size: 38px;
   line-height: 25px;
   font-weight: 400;
+  color: var(--white);
 }
 .pricing .box-container .box ul li {
   text-align: left;
   font-size: 16px;
   padding-left: 45px;
   margin: 20px auto;
-  color: var(--white);
+  color: var(--main-color);
+
   list-style: none;
   text-transform: uppercase;
 }
@@ -289,14 +301,14 @@ span {
   text-transform: capitalize;
   cursor: pointer;
   background: none;
-  color: var(--main-color1);
-  border: 2px solid var(--main-color1);
+  color: var(--black);
+  border: 2px solid var(--black);
   font-size: 17px;
   font-weight: bold;
 }
 .pricing .box-container .box button:hover {
   color: var(--white);
-  background: var(--main-color1);
+  background: var(--black);
 }
 
 /* ===============Footer========== */
@@ -307,7 +319,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 4rem 20%;
-  background: var(--second-bg-color);
+  background: var(--white);
 }
 .footer-text p {
   font-size: 2rem;

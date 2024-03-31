@@ -12,6 +12,7 @@
 }
 
 :root {
+  --second-bg-color: #ffc5828c;
   --indian-yellow: hsl(36, 61%, 58%);
   --eerie-black-1: hsl(0, 0%, 14%);
   --black_30: hsla(0, 0%, 0%, 0.3);
@@ -214,6 +215,10 @@ textarea.input-field {
   color: var(--eerie-black-1);
 }
 
+.appoin-card .card-content {
+  background: none;
+}
+
 /* ===============Footer========== */
 
 .footer {
@@ -222,7 +227,7 @@ textarea.input-field {
   align-items: center;
   flex-wrap: wrap;
   padding: 4rem 20%;
-  background: var(--second-bg-color);
+  background: var(--white);
 }
 .footer-text p {
   font-size: 2rem;

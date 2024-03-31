@@ -61,7 +61,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: var(--w-color);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .about-img img {
@@ -94,8 +94,6 @@ section {
 .sect {
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
-  /* padding: 26px 10px; */
-  /* padding: 30rem 9% 2rem;*/
   min-height: 50vh;
 }
 
@@ -159,7 +157,7 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   padding: 4rem 20%;
-  background: var(--second-bg-color);
+  background: var(--white);
 }
 .footer-text p {
   font-size: 2rem;

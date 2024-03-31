@@ -81,10 +81,6 @@ input {
   width: 100%;
 }
 
-/* address {
-  font-style: normal;
-} */
-
 html {
   font-family: var(--ff-rubik);
   font-size: 10px;
@@ -267,7 +263,7 @@ a.contact-link:is(:hover, :focus) {
 }
 /* ==============boutton de retour footer===================== */
 .footer-bottom {
-  background-color: var(--second-bg-color);
+  background: var(--white);
   text-align: center;
   display: flex;
   gap: 100px;
@@ -381,7 +377,8 @@ a.contact-link:is(:hover, :focus) {
   }
 
   .footer-bottom {
-    padding: 2rem 3%;
+    /* padding: 2rem 3%; */
+    padding: 4rem 20%;
   }
 }
 
