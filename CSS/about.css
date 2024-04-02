@@ -81,6 +81,9 @@ section {
 .about-content h3 {
   font-size: 4.6rem;
   text-transform: uppercase;
+  font-family: "Billin dreams";
+  font-style: italic;
+  color: var(--white);
 }
 .about-content p {
   font-size: 1.6rem;
